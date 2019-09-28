@@ -34,7 +34,8 @@ int main() {
     //determine winmner
     bool win;
     if (userNum == computerNum) {
-        std::cout << "It's a tie.";
+        std::cout << "It's a tie.\n";
+        std::cout << "The computer's hand is " << computerHand <<".\n";
     } else {
 
         if (userNum == 1) {
@@ -72,11 +73,13 @@ int main() {
                 win = true;
             };
         }
+    
+        std::cout << "The computer's hand is " << computerHand <<".\n";
+        if (win == true) {
+            std::cout << "You win!\n";
+        } else {
+            std::cout << "You lose.\n";
+        }
     }
-    std::cout << "The computer's hand is " << computerHand <<".\n";
-    if (win == true) {
-        std::cout << "You win!\n";
-    } else {
-        std::cout << "You lose.\n";
-    }
+    
 }
